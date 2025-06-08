@@ -34,7 +34,7 @@ export default function Navbar() {
         scrolled ? "bg-white/95 backdrop-blur-md shadow-lg" : "bg-transparent"
       }`}
     >
-      <div className="container-custom px-4 sm:px-8 lg:px-20">
+      <div className="container-custom px-4 sm:px-6 lg:px-16">
         <div className="flex justify-between items-center py-4">
           <Link href="/" className="text-2xl font-serif font-bold text-primary-700">
             Lilothia
@@ -53,7 +53,7 @@ export default function Navbar() {
                 {item.name}
               </Link>
             ))}
-            <button className="bg-gray-900 text-white px-6 py-3 text-sm rounded-md cursor-pointer hover:bg-gray-800">Contact</button>
+            <button className="bg-[#3D2914] text-white px-6 py-3 text-sm rounded-md cursor-pointer hover:bg-[#282119]">Contact</button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -97,7 +97,7 @@ export default function Navbar() {
                   </Link>
                 ))}
                 <div className="px-4">
-                  <button className="btn-primary w-full">Get Started</button>
+                  <button className="btn-primary w-full bg-[#3D2914] text-white px-6 py-3 text-sm rounded-md cursor-pointer hover:bg-[#282119]">Get Started</button>
                 </div>
               </div>
             </motion.div>

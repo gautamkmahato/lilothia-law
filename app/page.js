@@ -6,17 +6,12 @@ import LawyerHeroSection from './_components/LawyerHeroSection';
 import ScrollingComponent from './_components/ScrollingComponent';
 import FaqSection from './_components/FaqSection';
 import Footer from './_components/Footer';
+import Hero from './_components/Hero';
 
 export default function Home() {
   return (
     <>
-      <Navbar />
-      <HeroSection />
-      <LawPracticeSection />
-      <LawyerHeroSection />
-      <ScrollingComponent speed="30" />
-      <FaqSection />
-      <Footer />
+      <Hero />
     </>
   );
 }
