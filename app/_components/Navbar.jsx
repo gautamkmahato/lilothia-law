@@ -36,7 +36,7 @@ export default function Navbar() {
     >
       <div className="container-custom px-4 sm:px-6 lg:px-16">
         <div className="flex justify-between items-center py-4">
-          <Link href="/" className="text-2xl font-serif font-bold text-primary-700">
+          <Link href="/" className="text-2xl font-serif font-bold text-gray-100">
             Lilothia
           </Link>
 
@@ -47,7 +47,7 @@ export default function Navbar() {
                 key={item.name}
                 href={item.href}
                 className={`font-medium transition-colors duration-200 text-sm ${
-                  pathname === item.href ? "text-primary-600" : "text-neutral-700 hover:text-primary-600"
+                  pathname === item.href ? "text-gray-50" : "text-neutral-100 hover:text-primary-600"
                 }`}
               >
                 {item.name}
