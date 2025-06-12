@@ -67,15 +67,18 @@ export default function Hero() {
       {/* Hero Section - New Design */}
 <section
   className="relative bg-fixed bg-cover bg-center bg-no-repeat"
-  style={{ backgroundImage: "url('/hero-bg.jpeg')" }} // Replace with your image
+  style={{ backgroundImage: "url('/hero-bg.jpeg')" }}
 >
-  {/* Dark overlay for readability */}
+  {/* Brown semi-transparent overlay */}
+  <div className="absolute inset-0 bg-[#3D2914]/70 z-0" />
+
+  {/* Optional: dark gradient for text readability */}
   <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/20 z-0" />
 
-  {/* Content wrapper */}
+  {/* Main Content */}
   <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 py-20 md:py-22">
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center text-white">
-      
+
       {/* Left Content */}
       <motion.div
         className="space-y-6"
@@ -116,8 +119,8 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7 }}
         >
-          <motion.button
-            className="flex items-center space-x-2 bg-[#3D2914] text-white px-8 py-3 rounded-full hover:bg-[#2D1F0F] transition-all duration-300"
+          <motion.button 
+            className="flex items-center space-x-2 bg-[#fff1f1] text-[#3D2914] px-8 py-3 rounded-full hover:bg-[#ffeedb] cursor-pointer transition-all duration-300"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -143,7 +146,7 @@ export default function Hero() {
           </div>
           <div className="bg-white/10 backdrop-blur-3xl p-4 rounded-r-lg flex items-center justify-center">
             <motion.button
-              className="bg-[#3D2914] text-white p-2 rounded-md"
+              className="bg-[#fff1f1] text-[#3D2914] p-2 rounded-md"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
@@ -155,14 +158,14 @@ export default function Hero() {
 
       {/* Right Image Card */}
       <motion.div
-        className="relative h-[400px] lg:h-[500px]"  // Reduced height here
+        className="relative h-[400px] lg:h-[500px]"
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, delay: 0.3 }}
       >
-        <div className="relative w-full h-full overflow-hidden bg-white/70 backdrop-blur-3xl rounded-lg shadow-2xl">
+        <div className="relative w-full h-full overflow-hidden bg-white/20 backdrop-blur-xl rounded-lg shadow-2xl">
           <Image
-            src="/bg-right.png"
+            src="/bg-right-2.png"
             alt="Law firm building"
             fill
             className="object-cover"
@@ -171,7 +174,7 @@ export default function Hero() {
 
           <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent">
             <div className="flex items-center space-x-3">
-              <div className="h-10 w-10 rounded-full bg-[#C4B5A0] flex items-center justify-center">
+              <div className="h-10 w-10 rounded-full bg-[#fff1f1] flex items-center justify-center">
                 <Scale className="h-5 w-5 text-[#3D2914]" />
               </div>
               <div>
@@ -183,21 +186,23 @@ export default function Hero() {
         </div>
 
         {/* Floating Contact Box */}
-        <div className="absolute -bottom-4 -right-4 bg-white/90 p-4 rounded-lg shadow-lg">
+        <div className="absolute -bottom-4 -right-4 bg-white/20 backdrop-blur-xl p-4 rounded-lg shadow-lg">
           <div className="flex items-center space-x-3">
-            <div className="h-12 w-12 rounded-full bg-[#3D2914] flex items-center justify-center">
-              <Phone className="h-5 w-5 text-white" />
+            <div className="h-12 w-12 rounded-full bg-[#fff1f1] flex items-center justify-center">
+              <Phone className="h-5 w-5 text-[#3D2914]" />
             </div>
             <div>
-              <p className="text-[#3D2914] text-sm font-medium">Free Consultation</p>
-              <p className="text-[#5D4037] font-bold">(555) 123-4567</p>
+              <p className="text-[#ffffff] text-sm font-medium">Free Consultation</p>
+              <p className="text-[#ffffff] font-bold">(555) 123-4567</p>
             </div>
           </div>
         </div>
       </motion.div>
+
     </div>
   </div>
 </section>
+
 
 
 

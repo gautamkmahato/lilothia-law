@@ -5,6 +5,7 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { motion, AnimatePresence } from "framer-motion"
+import Image from "next/image";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -31,13 +32,16 @@ export default function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-white/95 backdrop-blur-md shadow-lg" : "bg-transparent"
+        scrolled ? "bg-white/95  backdrop-blur-md shadow-lg" : "bg-transparent"
       }`}
     >
       <div className="container-custom px-4 sm:px-6 lg:px-16">
         <div className="flex justify-between items-center py-4">
-          <Link href="/" className="text-2xl font-serif font-bold text-gray-100">
-            Lilothia
+          <Link href="/" className="flex text-xl font-serif font-bold text-gray-100">
+            <Image src='/logo.png' alt="logo" width="32" height="24" />
+            <span className={` ${
+        scrolled ? "text-yellow-800" : "text-yellow-100"
+      } `}>Lilothia</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -47,13 +51,15 @@ export default function Navbar() {
                 key={item.name}
                 href={item.href}
                 className={`font-medium transition-colors duration-200 text-sm ${
-                  pathname === item.href ? "text-gray-50" : "text-neutral-100 hover:text-primary-600"
-                }`}
+        scrolled ? "text-gray-800" : "text-white"
+      } `}
               >
                 {item.name}
               </Link>
             ))}
-            <button className="bg-[#3D2914] text-white px-6 py-3 text-sm rounded-md cursor-pointer hover:bg-[#282119]">Contact</button>
+            <button className={` ${
+        scrolled ? "bg-[#3D2914] text-[#fff7ef]" : "bg-[#fff1f1] text-[#3D2914]"
+      } px-6 py-3 text-sm rounded-md cursor-pointer hover:bg-[#fff7ee]`}>Contact</button>
           </div>
 
           {/* Mobile Menu Button */}
