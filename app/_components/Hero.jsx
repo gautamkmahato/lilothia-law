@@ -70,7 +70,7 @@ export default function Hero() {
         style={{ backgroundImage: "url('/hero-bg.jpeg')" }}
       >
         {/* Brown semi-transparent overlay */}
-        <div className="absolute inset-0 bg-[#141518]/70 z-0" />
+        <div className="absolute inset-0 bg-[#141518]/90 z-0" />
 
         {/* Optional: dark gradient for text readability */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/20 z-0" />
