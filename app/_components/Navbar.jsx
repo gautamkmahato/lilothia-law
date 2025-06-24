@@ -58,8 +58,8 @@ export default function Navbar() {
               </Link>
             ))}
             <button className={` ${
-        scrolled ? "bg-[#3D2914] text-[#fff7ef]" : "bg-[#fff1f1] text-[#3D2914]"
-      } px-6 py-3 text-sm rounded-md cursor-pointer hover:bg-[#fff7ee]`}>Contact</button>
+        scrolled ? "bg-[#141518] text-[#fff7ef]" : "bg-[#fff4f4] text-[#3D2914]"
+      } px-6 py-3 text-sm rounded-md cursor-pointer hover:bg-[#fcfaf6]`}>Contact</button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -103,7 +103,7 @@ export default function Navbar() {
                   </Link>
                 ))}
                 <div className="px-4">
-                  <button className="btn-primary w-full bg-[#3D2914] text-white px-6 py-3 text-sm rounded-md cursor-pointer hover:bg-[#282119]">Get Started</button>
+                  <button className="btn-primary w-full bg-[#141518] text-white px-6 py-3 text-sm rounded-md cursor-pointer hover:bg-[#282119]">Get Started</button>
                 </div>
               </div>
             </motion.div>
