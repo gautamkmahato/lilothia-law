@@ -170,19 +170,19 @@ export default function AboutUs() {
               </p>
               <div className="grid grid-cols-2 gap-8 mb-8">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-600 mb-2">500+</div>
+                  <div className="text-3xl font-bold text-[#00B598] mb-2">500+</div>
                   <div className="text-gray-600">Cases Won</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-600 mb-2">30+</div>
+                  <div className="text-3xl font-bold text-[#00B598] mb-2">30+</div>
                   <div className="text-gray-600">Years Experience</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-600 mb-2">98%</div>
+                  <div className="text-3xl font-bold text-[#00B598] mb-2">98%</div>
                   <div className="text-gray-600">Client Satisfaction</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-600 mb-2">15</div>
+                  <div className="text-3xl font-bold text-[#00B598] mb-2">15</div>
                   <div className="text-gray-600">Expert Attorneys</div>
                 </div>
               </div>
